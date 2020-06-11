@@ -1,4 +1,3 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'pages/email_screen.dart';
@@ -93,3 +92,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
     );
   }
 }
+
+
+// Scaffold 共16种属性
+// AppBar 顶部标题栏 ，不设置不显示

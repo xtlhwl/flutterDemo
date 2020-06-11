@@ -5,10 +5,12 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget{
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context){ // 组件构造方法
+    print('build');
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.light(),
+      color: Colors.red,
       home: BottomNavigationWidget()
     );
   }

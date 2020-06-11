@@ -7,9 +7,14 @@ class EmailScreen extends StatelessWidget {
       appBar: AppBar(
         title:Text('EMAIL')
       ),
-      body: Center(
-        child: Text('EMAIL'),
-        ),
+      body: RaisedButton(
+        child: Text('底部消息栏'),
+        onPressed: (){
+          Scaffold.of(context).showSnackBar(SnackBar(
+            content:Text('SnackBar'),duration:Duration(seconds: 5) // 底部消息
+          ));
+        },
+      )
     );
   }
 }

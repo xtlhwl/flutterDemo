@@ -7,9 +7,16 @@ class PagesScreen extends StatelessWidget {
       appBar: AppBar(
         title:Text('PAGES')
       ),
-      body: Center(
-        child: Text('PAGES'),
-        ),
+      body: RaisedButton(
+          child: Text('对话框'),
+          onPressed: () {
+          showAboutDialog(
+            context: context,
+            applicationName: 'Flutter 对话框',
+            applicationVersion: '1.0.0'
+          );
+        },),
+      
     );
   }
 }
