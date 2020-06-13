@@ -13,7 +13,7 @@ class PagesScreen extends StatelessWidget {
           showAboutDialog(
             context: context,
             applicationName: 'Flutter 对话框',
-            applicationVersion: '1.0.0'
+            applicationVersion: '1.0.0',
           );
         },),
       
